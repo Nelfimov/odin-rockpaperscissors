@@ -23,12 +23,7 @@ function playRockpaperscissors(playerSelection, computerSelection) {
 }
 
 function game() {
-  for (let i=0; i<5; i++) {
-    let playerChoice = prompt('Please enter your choice: rock, paper or scissors?');
-      while (!choices.includes(playerChoice)) {
-        playerChoice =  prompt('Please try again');
-      }
-      let result = playRockpaperscissors(playerChoice, getComputerChoice());
-      alert(result);
-  }
+  let result = playRockpaperscissors(playerChoice, getComputerChoice());
+  alert(result);
 }
+
